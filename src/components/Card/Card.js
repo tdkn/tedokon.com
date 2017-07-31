@@ -8,6 +8,7 @@ import InstagramButton from '../InstagramButton'
 import MailButton from '../MailButton'
 import Typography from 'material-ui/Typography'
 import Gravatar from 'react-gravatar'
+import Hidden from 'material-ui/Hidden'
 
 const styleSheet = createStyleSheet('Card', theme => ({
   container: {
@@ -33,7 +34,7 @@ const styleSheet = createStyleSheet('Card', theme => ({
   },
   image: {
     width: '100%',
-    height: '100%'
+    height: 'auto'
   },
   controls: {
     display: 'flex',
@@ -57,16 +58,23 @@ class Card extends Component {
 
   render() {
     const { classes } = this.props
+    const name = 'Shun Tedokon'
+    const subheader = [
+      'Web & iOS Developer in Okinawa, Japan.',
+      'I love Node.js and Swift.'
+    ]
     return (
       <div className={classes.container}>
         <BaseCard className={classes.card}>
-          <div className={classes.cover}>
-            <Gravatar
-              size={300}
-              email="web@tedokon.com"
-              className={classes.image}
-            />
-          </div>
+          <Hidden mdDown>
+            <div className={classes.cover}>
+              <Gravatar
+                size={300}
+                email="web@tedokon.com"
+                className={classes.image}
+              />
+            </div>
+          </Hidden>
           <div className={classes.details}>
             <CardContent className={classes.content}>
               <Typography type="headline">Shun Tedokon</Typography>
