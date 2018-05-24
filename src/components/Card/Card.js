@@ -82,7 +82,7 @@ class Card extends Component {
                 Web & iOS Developer in Okinawa, Japan.
               </Typography>
               <Typography type="subheading" color="secondary">
-                I love Node.js and Swift.
+                I love JavaScript.
               </Typography>
             </CardContent>
             <div className={classes.controls}>
