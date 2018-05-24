@@ -2,6 +2,7 @@
   "name": "tedokon.com",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.tedokon.com",
   "dependencies": {
     "material-ui": "next",
     "react": "^15.6.1",
