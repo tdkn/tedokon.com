@@ -77,6 +77,7 @@ const Home: NextPage = () => {
             <Tooltip label="Blog">
               <IconButton
                 as="a"
+                mr="-px"
                 aria-label="Blog"
                 icon={<FaIcon icon={faEdit} />}
                 href="https://tdkn.dev"
