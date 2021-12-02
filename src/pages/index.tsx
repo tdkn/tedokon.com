@@ -6,7 +6,6 @@ import {
   Flex,
   Heading,
   IconButton,
-  Spacer,
   Text,
   Tooltip,
   VStack,
@@ -45,50 +44,45 @@ const Home: NextPage = () => {
             <Text>App Developer in Okinawa, Japan.</Text>
             <Text>{"I love Swift & JavaScript."}</Text>
           </Box>
-          <Spacer />
-          <ButtonGroup size="sm" isAttached variant="outline">
-            <Tooltip label="Twitter">
-              <IconButton
-                as="a"
-                mr="-px"
-                aria-label="Twitter"
-                icon={<FaIcon icon={faTwitter} />}
-                href="https://twitter.com/tdkn_"
-              />
-            </Tooltip>
-            <Tooltip label="GitHub">
-              <IconButton
-                as="a"
-                mr="-px"
-                aria-label="GitHub"
-                icon={<FaIcon icon={faGithub} />}
-                href="https://github.com/tdkn"
-              />
-            </Tooltip>
-            <Tooltip label="Facebook">
-              <IconButton
-                as="a"
-                mr="-px"
-                aria-label="Facebook"
-                icon={<FaIcon icon={faFacebook} />}
-                href="https://facebook.com/shun.tedokon"
-              />
-            </Tooltip>
-            <Tooltip label="Blog">
-              <IconButton
-                as="a"
-                mr="-px"
-                aria-label="Blog"
-                icon={<FaIcon icon={faEdit} />}
-                href="https://tdkn.dev"
-              />
-            </Tooltip>
+          <ButtonGroup size="sm" spacing="1" variant="ghost">
             <Tooltip label="Email">
               <IconButton
                 as="a"
                 aria-label="Email"
                 icon={<FaIcon icon={faEnvelope} />}
-                href="mailto:web@tedokon.com"
+                href="mailto:me@tdkn.dev"
+              />
+            </Tooltip>
+            <Tooltip label="Twitter">
+              <IconButton
+                as="a"
+                aria-label="Twitter"
+                icon={<FaIcon icon={faTwitter} />}
+                href="https://twitter.com/tdkn_"
+              />
+            </Tooltip>
+            <Tooltip label="Facebook">
+              <IconButton
+                as="a"
+                aria-label="Facebook"
+                icon={<FaIcon icon={faFacebook} />}
+                href="https://facebook.com/shun.tedokon"
+              />
+            </Tooltip>
+            <Tooltip label="GitHub">
+              <IconButton
+                as="a"
+                aria-label="GitHub"
+                icon={<FaIcon icon={faGithub} />}
+                href="https://github.com/tdkn"
+              />
+            </Tooltip>
+            <Tooltip label="Blog">
+              <IconButton
+                as="a"
+                aria-label="Blog"
+                icon={<FaIcon icon={faEdit} />}
+                href="https://tdkn.dev"
               />
             </Tooltip>
           </ButtonGroup>
